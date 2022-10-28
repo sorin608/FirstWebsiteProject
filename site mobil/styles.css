@@ -1,0 +1,380 @@
+/* Master Styles */
+body {
+    margin: 0px;
+    background-color: cornsilk;
+}
+
+header {
+    background-color:#050505;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+
+    
+}
+.brand {
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-right: 1em;
+
+
+}
+
+.logo {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 200;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.945);
+    font-size: 16px;
+
+}
+
+nav {
+    position: absolute;
+    text-align: center;
+    top: 99%;
+    left: 0;
+    background-color: #050505;
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+    font-family: 'Noto Sans KR', sans-serif;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+    
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: cornsilk;
+    text-decoration: none;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition:  opacity 150ms ease-in-out;
+}
+
+
+.limba{
+    display: flex;
+    justify-content: center;
+}
+
+.romana{
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+}
+
+.romana a {
+    color: transparent;
+}
+.engleza{
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+
+}
+
+.engleza a {
+    color: transparent;
+}
+
+
+
+
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition:  opacity 250ms ease-in-out 250ms;
+}
+.nav-toggle {
+display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 3px;
+    width: 2em;
+    border-radius: 3px;
+    position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+.header-img {
+    width: 65px;
+    height: 68px;
+}
+
+.smecherie {
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    height: 65px;
+}
+
+
+
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background-op {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    pointer-events: none;
+    
+}
+
+.logox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: cornsilk;
+    padding-top: 30px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    font-size: 40px;
+
+}
+
+.descriere {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: cornsilk;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    
+}
+
+.harta {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: cornsilk;
+}
+.info-contact {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cornsilk;
+    padding-top: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+
+}
+
+.titlu-cabinet {
+    font-size: 19px;
+    
+}
+
+.adresa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    text-align: center;
+}
+.telefon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+.email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+.cif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+.barou{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+.barou2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    text-align: center;
+}
+.divider2 {
+    display: flex;
+    width: 70%;
+    border-bottom: 10px solid rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    margin-top: 30px;
+
+}
+.social-menu{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-right: 35px;
+}
+.social-menu ul {
+    display: flex;
+    position: relative;
+    align-items: center;
+    
+
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+.social-menu ul li .fa {
+    font-size: 30px;
+    line-height: 60px;
+    width: 60px;
+    transition: .6s;
+    color: #000;
+}
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.descriere-personala {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/fotobk.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-position: top;
+   
+}
+
+.descriere-personala::before {
+    content: "";
+  background-image: url(images/fotobk.jpg);
+  position: fixed;
+background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(5px);
+  margin: -10px; 
+}
+
+.des-pers {
+    display: flex;
+    position: relative;
+    pointer-events: none;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-color:rgba(255, 248, 220, .7); 
+    flex-direction: column;
+}
+.poza-pers{
+    display: flex;
+    position: absolute;
+    background-size: cover;
+    margin-top: 25px;
+}
+
+.descr {
+    padding: 20px;
+    font-size: 20px;
+    
+}
+
+.motto-cab {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 400px;
+}
+.descr {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 17px;
+
+}
+
